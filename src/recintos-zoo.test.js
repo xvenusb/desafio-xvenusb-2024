@@ -5,13 +5,13 @@ describe('Recintos do Zoologico', () => {
     test('Deve rejeitar animal inválido', () => {
             const resultado = new RecintosZoo().analisaRecintos('UNICORNIO', 1);
             expect(resultado.erro).toBe("Animal inválido");
-            expect(resultado.recintosViaveis).toBeFalsy();
+            expect(resultado.recintosViaveis).toBeFalsy(); //solucionado!
         });
 
     test('Deve rejeitar quantidade inválida', () => {
             const resultado = new RecintosZoo().analisaRecintos('MACACO', 0);
             expect(resultado.erro).toBe("Quantidade inválida");
-            expect(resultado.recintosViaveis).toBeFalsy();
+            expect(resultado.recintosViaveis).toBeFalsy(); //solucionado!
     });
 
     test('Não deve encontrar recintos para 10 macacos', () => {
